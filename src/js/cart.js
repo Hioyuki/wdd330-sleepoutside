@@ -1,13 +1,34 @@
-import { getLocalStorage } from "./utils.mjs";
+import { getLocalStorage, setLocalStorage } from "./utils.mjs";
 
-function renderCartContents() {
+function getCartItems() {
   const cartItems = getLocalStorage("so-cart");
-  const htmlItems = cartItems.map((item) => cartItemTemplate(item));
-  document.querySelector(".product-list").innerHTML = htmlItems.join("");
+
+  if (Array.isArray(cartItems)) {
+    return cartItems;
+  }
+
+  return cartItems ? [cartItems] : [];
 }
 
-function cartItemTemplate(item) {
+function renderCartContents() {
+  const cartItems = getCartItems();
+
+  if (!cartItems.length) {
+    document.querySelector(".product-list").innerHTML =
+      "<li class='cart-empty'>Your cart is empty.</li>";
+    return;
+  }
+
+  const htmlItems = cartItems.map((item, index) =>
+    cartItemTemplate(item, index),
+  );
+  document.querySelector(".product-list").innerHTML = htmlItems.join("");
+  attachRemoveEvents();
+}
+
+function cartItemTemplate(item, index) {
   const newItem = `<li class="cart-card divider">
+  <button class="cart-card__remove" type="button" data-index="${index}" aria-label="Remove ${item.Name} from cart">X</button>
   <a href="#" class="cart-card__image">
     <img
       src="${item.Image}"
@@ -23,6 +44,21 @@ function cartItemTemplate(item) {
 </li>`;
 
   return newItem;
+}
+
+function removeCartItem(index) {
+  const cartItems = getCartItems();
+  cartItems.splice(index, 1);
+  setLocalStorage("so-cart", cartItems);
+  renderCartContents();
+}
+
+function attachRemoveEvents() {
+  document.querySelectorAll(".cart-card__remove").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      removeCartItem(Number(event.currentTarget.dataset.index));
+    });
+  });
 }
 
 renderCartContents();
