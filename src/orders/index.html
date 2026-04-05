@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Outside | Orders</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/orders.js" type="module"></script>
+  </head>
+  <body>
+    <header class="divider">
+      <div class="logo">
+        <img src="../images/noun_Tent_2517.svg" alt="tent image for logo" />
+        <a href="../index.html">Sleep<span class="highlight">Outside</span></a>
+      </div>
+      <div class="orders-toolbar">
+        <p class="orders-toolbar__status" data-orders-status>Loading session...</p>
+        <button id="logoutButton" type="button">Logout</button>
+      </div>
+    </header>
+    <main class="divider">
+      <section class="orders-shell">
+        <div class="orders-shell__header">
+          <div>
+            <p class="newsletter__eyebrow">Protected Orders</p>
+            <h2>Incoming Orders</h2>
+          </div>
+          <a class="button-link" href="../login/index.html">Switch Account</a>
+        </div>
+        <div class="orders-list" data-orders-list></div>
+      </section>
+    </main>
+    <footer>&copy;NOT a real business</footer>
+  </body>
+</html>

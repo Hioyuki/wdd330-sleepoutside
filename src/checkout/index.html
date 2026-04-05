@@ -9,6 +9,7 @@
     <title>Sleep Outside | Checkout</title>
 
     <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/checkout.js" type="module"></script>
   </head>
 
   <body>
@@ -57,8 +58,143 @@
     </header>
 
     <main class="divider">
-      <section class="products">
+      <section class="products checkout-page">
         <h2>Review & Place your Order</h2>
+
+        <div class="checkout-layout">
+          <form id="checkoutForm" class="checkout-form">
+            <div class="checkout-form__group">
+              <h3>Customer Name</h3>
+              <label for="fname">First Name</label>
+              <input
+                id="fname"
+                name="fname"
+                type="text"
+                autocomplete="given-name"
+                required
+                minlength="2"
+              />
+
+              <label for="lname">Last Name</label>
+              <input
+                id="lname"
+                name="lname"
+                type="text"
+                autocomplete="family-name"
+                required
+                minlength="2"
+              />
+            </div>
+
+            <div class="checkout-form__group">
+              <h3>Address</h3>
+              <label for="street">Street Address</label>
+              <input
+                id="street"
+                name="street"
+                type="text"
+                autocomplete="street-address"
+                required
+                minlength="5"
+              />
+
+              <label for="city">City</label>
+              <input
+                id="city"
+                name="city"
+                type="text"
+                autocomplete="address-level2"
+                required
+                minlength="2"
+              />
+
+              <label for="state">State</label>
+              <input
+                id="state"
+                name="state"
+                type="text"
+                autocomplete="address-level1"
+                required
+                minlength="2"
+                maxlength="20"
+              />
+
+              <label for="zip">Zip Code</label>
+              <input
+                id="zip"
+                name="zip"
+                type="text"
+                autocomplete="postal-code"
+                inputmode="numeric"
+                required
+                pattern="^\d{5}(-\d{4})?$"
+                placeholder="83440"
+              />
+            </div>
+
+            <div class="checkout-form__group">
+              <h3>Payment</h3>
+              <label for="cardNumber">Credit Card Number</label>
+              <input
+                id="cardNumber"
+                name="cardNumber"
+                type="text"
+                autocomplete="cc-number"
+                inputmode="numeric"
+                required
+                pattern="^\d{16}$"
+                placeholder="1234123412341234"
+              />
+
+              <label for="expiration">Expiration Date</label>
+              <input
+                id="expiration"
+                name="expiration"
+                type="text"
+                autocomplete="cc-exp"
+                required
+                pattern="^(0[1-9]|1[0-2])\/(\d{2}|\d{4})$"
+                placeholder="08/27"
+              />
+
+              <label for="code">Security Code</label>
+              <input
+                id="code"
+                name="code"
+                type="text"
+                autocomplete="cc-csc"
+                inputmode="numeric"
+                required
+                pattern="^\d{3,4}$"
+                placeholder="123"
+              />
+            </div>
+
+            <button id="checkoutSubmit" type="submit">Place Order</button>
+          </form>
+
+          <aside class="order-summary">
+            <h3>Order Summary</h3>
+            <dl class="order-summary__list">
+              <div>
+                <dt>Subtotal</dt>
+                <dd id="itemSubtotal">$0.00</dd>
+              </div>
+              <div>
+                <dt>Shipping Estimate</dt>
+                <dd id="shipping">$0.00</dd>
+              </div>
+              <div>
+                <dt>Tax</dt>
+                <dd id="tax">$0.00</dd>
+              </div>
+              <div class="order-summary__total">
+                <dt>Order Total</dt>
+                <dd id="orderTotal">$0.00</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
       </section>
     </main>
 

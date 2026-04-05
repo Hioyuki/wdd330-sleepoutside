@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Outside | Admin Login</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/login.js" type="module"></script>
+  </head>
+  <body>
+    <header class="divider">
+      <div class="logo">
+        <img src="../images/noun_Tent_2517.svg" alt="tent image for logo" />
+        <a href="../index.html">Sleep<span class="highlight">Outside</span></a>
+      </div>
+      <div class="cart">
+        <a href="../register/index.html">Create Account</a>
+      </div>
+    </header>
+    <main class="divider">
+      <section class="auth-shell">
+        <div class="auth-shell__content">
+          <p class="newsletter__eyebrow">Order Management</p>
+          <h2>Sign in to review and process incoming orders.</h2>
+          <p>
+            Use a valid team account email and password to receive an access
+            token from the server.
+          </p>
+        </div>
+        <form class="auth-form" id="loginForm">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            required
+            minlength="6"
+          />
+
+          <button type="submit">Sign In</button>
+        </form>
+      </section>
+    </main>
+    <footer>&copy;NOT a real business</footer>
+  </body>
+</html>
