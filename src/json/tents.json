@@ -4,12 +4,31 @@
     "NameWithoutBrand": "Ajax Tent - 3-Person, 3-Season",
     "Name": "Marmot Ajax Tent - 3-Person, 3-Season",
     "Image": "../images/tents/marmot-ajax-tent-3-person-3-season-in-pale-pumpkin-terracotta~p~880rr_01~320.jpg",
+    "Images": {
+      "PrimaryLarge": "../images/tents/marmot-ajax-tent-3-person-3-season-in-pale-pumpkin-terracotta~p~880rr_01~320.jpg",
+      "ExtraImages": [
+        {
+          "Title": "Packed View",
+          "Src": "../images/tents/marmot-ajax-tent-2-person-3-season-in-pale-pumpkin-terracotta~p~880rt_01~320.jpg"
+        },
+        {
+          "Title": "Trail View",
+          "Src": "../images/tents/marmot-ajax-tent-3-person-3-season-in-pale-pumpkin-terracotta~p~880rr_01~320.jpg"
+        }
+      ]
+    },
 
     "SizesAvailable": {},
     "Colors": [
       {
         "ColorCode": "01",
-        "ColorName": "Pale Pumpkin/Terracotta"
+        "ColorName": "Pale Pumpkin/Terracotta",
+        "ColorPreviewImageSrc": "../images/tents/marmot-ajax-tent-3-person-3-season-in-pale-pumpkin-terracotta~p~880rr_01~320.jpg"
+      },
+      {
+        "ColorCode": "02",
+        "ColorName": "Dark Spruce/Amber",
+        "ColorPreviewImageSrc": "../images/tents/marmot-ajax-tent-2-person-3-season-in-pale-pumpkin-terracotta~p~880rt_01~320.jpg"
       }
     ],
     "DescriptionHtmlSimple": "Get out and enjoy nature with Marmot&#39;s Ajax tent, featuring a smart design with durable, waterproof construction and two doors for easy access.",
@@ -27,12 +46,31 @@
     "NameWithoutBrand": "Talus Tent - 4-Person, 3-Season",
     "Name": "The North Face Talus Tent - 4-Person, 3-Season",
     "Image": "../images/tents/the-north-face-talus-tent-4-person-3-season-in-golden-oak-saffron-yellow~p~985rf_01~320.jpg",
+    "Images": {
+      "PrimaryLarge": "../images/tents/the-north-face-talus-tent-4-person-3-season-in-golden-oak-saffron-yellow~p~985rf_01~320.jpg",
+      "ExtraImages": [
+        {
+          "Title": "Side View",
+          "Src": "../images/tents/the-north-face-talus-tent-3-person-3-season-in-golden-oak-saffron-yellow~p~989cg_01~320.jpg"
+        },
+        {
+          "Title": "Pitch Detail",
+          "Src": "../images/tents/the-north-face-alpine-guide-tent-3-person-4-season-in-canary-yellow-high-rise-grey~p~985pr_01~320.jpg"
+        }
+      ]
+    },
 
     "SizesAvailable": {},
     "Colors": [
       {
         "ColorCode": "01",
-        "ColorName": "Golden Oak/Saffron Yellow"
+        "ColorName": "Golden Oak/Saffron Yellow",
+        "ColorPreviewImageSrc": "../images/tents/the-north-face-talus-tent-4-person-3-season-in-golden-oak-saffron-yellow~p~985rf_01~320.jpg"
+      },
+      {
+        "ColorCode": "02",
+        "ColorName": "Storm Blue/Zinc Grey",
+        "ColorPreviewImageSrc": "../images/tents/the-north-face-talus-tent-3-person-3-season-in-golden-oak-saffron-yellow~p~989cg_01~320.jpg"
       }
     ],
     "DescriptionHtmlSimple": "<strong>Closeout</strong>. Enjoy a fun night under stars with your favorite people in The North Face&#39;s Talus four-person tent, featuring durable construction with a roomy interior, an advanced DAC <a class=\"glossaryTermLink\" href=\"/featherlite~g~1835\" title=\"Featherlite: - Unusually strong aluminum poles used for tents. DAC Featherlite tent poles use a system of three small metal sleeves to give the poles added strength and flex, while keeping them as lightweight as possible. Up to 15% lighter than aluminum poles of comparable strength, Featherlite poles are the strongest joint system built for tents.\">Featherlite</a> NSL pole system and an easy to pitch design.",

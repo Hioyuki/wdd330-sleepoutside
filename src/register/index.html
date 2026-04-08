@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Outside | Create Account</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/register.js" type="module"></script>
+  </head>
+  <body>
+    <header class="divider">
+      <div class="logo">
+        <img src="../images/noun_Tent_2517.svg" alt="tent image for logo" />
+        <a href="../index.html">Sleep<span class="highlight">Outside</span></a>
+      </div>
+      <div class="cart">
+        <a href="../wishlist/index.html">Wishlist</a>
+      </div>
+    </header>
+    <main class="divider">
+      <section class="auth-shell">
+        <div class="auth-shell__content">
+          <p class="newsletter__eyebrow">Customer Registration</p>
+          <h2>Create your Sleep Outside login.</h2>
+          <p>
+            Save your shipping details now so your wishlist, comments, and next
+            checkout are easier later.
+          </p>
+        </div>
+        <form class="auth-form" id="registerForm">
+          <label for="fname">First Name</label>
+          <input id="fname" name="fname" type="text" autocomplete="given-name" required />
+
+          <label for="lname">Last Name</label>
+          <input id="lname" name="lname" type="text" autocomplete="family-name" required />
+
+          <label for="street">Street Address</label>
+          <input id="street" name="street" type="text" autocomplete="street-address" required />
+
+          <label for="city">City</label>
+          <input id="city" name="city" type="text" autocomplete="address-level2" required />
+
+          <label for="state">State</label>
+          <input id="state" name="state" type="text" autocomplete="address-level1" required />
+
+          <label for="zip">Zip Code</label>
+          <input
+            id="zip"
+            name="zip"
+            type="text"
+            autocomplete="postal-code"
+            required
+            pattern="^\d{5}(-\d{4})?$"
+          />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+
+          <label for="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            autocomplete="new-password"
+            minlength="6"
+            required
+          />
+
+          <label for="avatar">Avatar URL (Optional)</label>
+          <input
+            id="avatar"
+            name="avatar"
+            type="url"
+            autocomplete="url"
+            placeholder="https://example.com/avatar.jpg"
+          />
+
+          <button type="submit">Create Account</button>
+        </form>
+      </section>
+    </main>
+    <footer>&copy;NOT a real business</footer>
+  </body>
+</html>
